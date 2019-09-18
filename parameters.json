@@ -1,8 +1,7 @@
 {
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
     "contentVersion": "1.0.0.0",
-    "parameters": 
-{
+    "parameters": {
         "location": {
             "value": "southindia"
         },
@@ -72,7 +71,7 @@
             "value": "default"
         },
         "virtualNetworkId": {
-            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc1/providers/Microsoft.Network/virtualNetworks/az-auto-poc-vnet"
+            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc/providers/Microsoft.Network/virtualNetworks/az-auto-poc-vnet"
         },
         "publicIpAddressName": {
             "value": "Automation-ARM-ip"
@@ -87,7 +86,7 @@
             "value": "Automation-ARM"
         },
         "virtualMachineRG": {
-            "value": "az-auto-poc1"
+            "value": "az-auto-poc"
         },
         "osDiskType": {
             "value": "Premium_LRS"
@@ -105,7 +104,7 @@
             "value": "azautopocdiag"
         },
         "diagnosticsStorageAccountId": {
-            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc1/providers/Microsoft.Storage/storageAccounts/azautopocdiag"
+            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc/providers/Microsoft.Storage/storageAccounts/azautopocdiag"
         }
     }
 }
