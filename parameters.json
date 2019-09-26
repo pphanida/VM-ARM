@@ -3,13 +3,13 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "southindia"
+            "value": "westus2"
         },
         "networkInterfaceName": {
-            "value": "automation-arm307"
+            "value": "armvm156"
         },
         "networkSecurityGroupName": {
-            "value": "Automation-ARM-nsg"
+            "value": "ARMVM-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -70,11 +70,26 @@
         "subnetName": {
             "value": "default"
         },
-        "virtualNetworkId": {
-            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc/providers/Microsoft.Network/virtualNetworks/az-auto-poc-vnet"
+        "virtualNetworkName": {
+            "value": "az-auto-poc-vnet"
+        },
+        "addressPrefixes": {
+            "value": [
+                "10.0.1.0/24"
+            ]
+        },
+        "subnets": {
+            "value": [
+                {
+                    "name": "default",
+                    "properties": {
+                        "addressPrefix": "10.0.1.0/24"
+                    }
+                }
+            ]
         },
         "publicIpAddressName": {
-            "value": "Automation-ARM-ip"
+            "value": "ARMVM-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -83,10 +98,10 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "Automation-ARM"
+            "value": "ARMVM1"
         },
         "virtualMachineRG": {
-            "value": "az-auto-poc"
+            "value": "az-auto-poc1"
         },
         "osDiskType": {
             "value": "Premium_LRS"
@@ -95,16 +110,22 @@
             "value": "Standard_D2s_v3"
         },
         "adminUsername": {
-            "value": "pphanida1"
+            "value": "pphanida"
         },
         "adminPassword": {
             "value": "Prasanna@191295"
         },
         "diagnosticsStorageAccountName": {
-            "value": "azautopocdiag"
+            "value": "azautopocdiag210"
         },
         "diagnosticsStorageAccountId": {
-            "value": "/subscriptions/8822d662-73a5-4b35-bf2f-2b32e19864e6/resourceGroups/az-auto-poc/providers/Microsoft.Storage/storageAccounts/azautopocdiag"
+            "value": "Microsoft.Storage/storageAccounts/azautopocdiag210"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountKind": {
+            "value": "Storage"
         }
     }
 }
