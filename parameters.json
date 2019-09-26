@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "location": {
-            "value": "South India"
+            "value": "southindia"
         },
         "networkInterfaceName": {
             "value": "armvm156"
